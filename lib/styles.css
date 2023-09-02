@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: 1s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    width: 100vw;
+    background-image: url(https://source.unsplash.com/1920x1080/?landscape);
+}
+
+.main-total {
+    display: flex;
+}
+
+.label-div {
+    width: 31em;
+    height: 20em;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+    transition: 1s;
+}
+
+.input-search {
+    border:none;
+    outline: none;
+    padding: 25px;
+    font-size: 17px;
+    border-radius: 12px;
+    background-color: #7c7c7c2b;
+    transition: cubic-bezier(0.77, 0, 0.175, 1) 1s;
+
+}
+
+.lupa {
+    width: 25px;
+    height: 26px;
+}
+
+.button-search {
+    margin-left: 27px;
+    border: 0.5px solid black ;
+    border-radius: 1rem;
+    width: 165px;
+    height: 62px;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+}
+
+.button-search:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 17.8%rgb(255, 255, 255) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button-search:hover {
+    opacity: 0.6;
+    background-color: grey;
+}
+
+.button-search:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 100.2%);
+    transition: 0.1s;
+    opacity: 0.5;
+}
+
+.city {
+    margin-top: 25px;
+    font-size: 2.1em;
+    font: bold;
+}
+
+.humidity, .state, .temperature {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
