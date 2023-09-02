@@ -22,8 +22,8 @@ body {
 }
 
 .label-div {
-    width: 31em;
-    height: 20em;
+    width: 34em;
+    height: 24em;
     background-color: #f4f4f4;
     border-radius: 20px;
     margin: 0 auto;
@@ -94,4 +94,11 @@ body {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 500;
+}
+
+.min, .max {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+
 }
